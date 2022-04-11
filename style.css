@@ -1,0 +1,15 @@
+.header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #484444;
+    color: white;
+    font-size: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow: 0px 0px 15px black;
+}
+body {
+    margin: 0px;
+}
+.headtext {
+    padding-left: 15px;
+}
