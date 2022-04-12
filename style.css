@@ -67,11 +67,16 @@ margin-top: -250px;
 }
 .sklep {
     text-align: center;
+    
+    text-decoration: underline;
 }
 .opis {
+    flex-direction: column;
     text-align: center;
+    order: 3, 2, 1;
 }
 .newsletter {
+
     float: left;
     padding-left: 50px;
     text-transform: uppercase;
@@ -103,4 +108,19 @@ a:visited {
 .bottom {
     display: flex;
     justify-content: center;
+}
+.zdj {
+
+}
+.textsklep {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    
+}
+.textsklep > a {
+    border: black solid 1px;
+    display: inline;
 }
