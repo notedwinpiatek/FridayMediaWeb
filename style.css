@@ -5,9 +5,11 @@
     color: white;
     font-size: 15px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    box-shadow: 0px 0px 15px black;
+    box-shadow: 0px 0px 50px black;
     position: fixed;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 body {
     margin: 0px;
@@ -15,6 +17,7 @@ body {
 }
 .headtext {
     padding-left: 50px;
+    display: inline;
     float: left;
     
 }
@@ -48,6 +51,9 @@ margin-top: -250px;
     padding-bottom: 50px;
 }
 .shop {
+    
+    display: flex;
+    justify-content: center;
     align-items: center;
     background-color: #484444;
     color: white;
@@ -56,6 +62,7 @@ margin-top: -250px;
     box-shadow: 0px 0px 15px black;
 }
 .presety {
+    display: flex;
     padding: 30px;
 }
 .sklep {
@@ -92,4 +99,8 @@ a:hover {
 }
 a:visited {
     color: white;
+}
+.bottom {
+    display: flex;
+    justify-content: center;
 }
