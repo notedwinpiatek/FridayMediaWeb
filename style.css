@@ -14,6 +14,8 @@
 body {
     margin: 0px;
     background-color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 .headtext {
     padding-left: 50px;
@@ -32,7 +34,6 @@ margin-top: -250px;
     text-align: center;
     text-decoration: underline;
     color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .th1 {
     padding-left: 150px;
@@ -50,32 +51,10 @@ margin-top: -250px;
     padding-left: 150px;
     padding-bottom: 50px;
 }
-.shop {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #484444;
-    color: white;
-    font-size: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    box-shadow: 0px 0px 15px black;
-}
+
 .presety {
     display: flex;
     padding: 30px;
-}
-.sklep {
-    text-align: center;
-    
-    text-decoration: underline;
-}
-.opis {
-    text-align: center;
-    width: 250px;
-    flex-direction: column;
-    text-align: center;
-    order: 3, 2, 1;
 }
 .newsletter {
 
@@ -84,7 +63,6 @@ margin-top: -250px;
     text-transform: uppercase;
     color: white;
     font-size: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .input {
     padding: 2px;
@@ -95,8 +73,6 @@ margin-top: -250px;
     text-transform: uppercase;
     color: white;
     font-size: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
 }
 a:link {
     color:white;
@@ -107,36 +83,41 @@ a:hover {
 a:visited {
     color: white;
 }
-.bottom {
+/* sklep */
+.pic{
+    margin-left: 50px;
+}
+.shop { 
+    background-color: #484444;
+    color: white;
+    font-size: 15px;
+    /* box-shadow: 0px 0px 15px black;  */
+    justify-content: flex-start;
     display: flex;
-    justify-content: center;
+    gap: 200px;
 }
-.zdj {
-
-}
-.textsklep {
-    margin-right: 20px;
-    text-align: center;
+.shoptext {
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    
+    text-align: center;
+    gap: 30px;
+    width: 400px;
 }
-.linksklep {
-    background-color: #fff900;
-    border-radius: 15px;
-    width: 150px;
-    border: black solid 1px;
-    /*display: inline;*/
-}
-.linksklep > a {
-    text-decoration: none;
+.shoptext > a > button{
+    padding: 15px 40px 15px 40px;
+    background-color: yellow;
     color: black;
+    border-radius: 15px;
+    border: 0px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    width: 175px;
+    margin: 0 auto;
 }
-.linksklep:hover {
-   background-color: black;
+.shoptext > a > button:hover{
+    background-color: black;
+    color: yellow;
 }
-.linksklep > a:hover {
-    color: #fff900;
-}
+/* ---------- */
