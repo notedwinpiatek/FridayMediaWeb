@@ -10,7 +10,7 @@ body {
 .header {
     /* padding-top: 15px;
     padding-bottom: 15px; */
-    height: 90px;
+    height: 10vh;
     background-color: #484444;
     font-size: 1em;
     box-shadow: 0px 0px 50px black;
@@ -40,54 +40,49 @@ body {
 .header a:active{
     color: black;
 }
-/* --------------------------------------------------------------------- */
-/* YOUTUBE ------------------------------------------------------------- */
-.slide1 {
-width: 100%;
-height: 100vh;
-object-fit: cover;
-object-position: 0 -300px;
+/* SLAJD ----------------------------- */
+.slider {
+    background: url(img/slider1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100vh;
 }
+/* YOUTUBE ------------------------------*/
 .youtube {
   background-color: black;
 }
 .yttext {
+    margin: 0 auto;
     text-align: center;
-    text-decoration: underline;
     color: white;
+    font-size: 3em;
 }
 .ytvideos{
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-    align-items: flex-start;
-    margin: 15px 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
 }
-.vd{
-    margin: 2em 3em; 
-}
-.newsletter {
-    float: left;
-    padding-left: 50px;
-    text-transform: uppercase;
-    color: white;
-    font-size: 15px;
-}
-.input {
-    padding: 2px;
-}
-.nawigacja {
-    float: left;
-    padding-left: 100px;
-    text-transform: uppercase;
-    color: white;
-    font-size: 15px;
+.ytvideos a{
+    background: url(img/th1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
 }
 
-/* sklep ----------------------------------------------------------------*/
+/* sklep -----------------------------------*/
 .pic{
     margin-left: 50px;
     filter: drop-shadow(10px 10px 10px #000);
+    margin: 10px 20px 40px 50px;
+}
+.pic img{
+    width: 300px;
+    height: auto;
 }
 .shop { 
     background-color: #484444;
@@ -99,23 +94,68 @@ object-position: 0 -300px;
 .shoptext {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    margin-top: 10px;
-    width: 400px;
+    margin-top: 38px;  
+    max-width: 450px;  
+}
+.shoptext h2{
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+.opis{
+    margin-bottom: 20px;
+    font-size: 1.25em;
+    max-width: 325px;
 }
 .shoptext a{
-    padding: 15px 40px 15px 40px;
-    background-color: yellow;
-    color: black;
-    border-radius: 15px;
-    border: 3px solid #484444;
+    padding: 12px 20px 12px 20px;
+    background-color: #484444;
+    color: #fff900;
+    border-radius: 20px;
+    border: 3px solid #fff900;
     text-align: center;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.25em;
+    max-width: 150px;
 }
 .shoptext a:hover{
-    background-color: #484444;
+    background-color: #fff900;
     border: #fff900 3px solid;
-    color: yellow;
+    color: black;
 }
-/* ------------------------------------------------------------------------*/
+.shoptext a:active{
+    border: 3px solid #484444;
+}
+/* -------------------------------------------*/
+.bottom{
+    display: flex;
+    justify-content: flex-start;
+}
+.newsletter {
+    padding-left: 50px;
+    text-transform: uppercase;
+    color: white;
+}
+.newsletter h3{
+    font-size: 1.5em;
+}
+.input {
+    padding: 2px;
+}
+.nawigacja {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+}
+.nawigacja a{
+    color: white;
+    text-decoration: underline;
+}
+.nawigacja a:hover {
+    color: #fff900;
+}
+.nawigacja a:active{
+    color: black;
+}
