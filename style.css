@@ -1,15 +1,17 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Nunito', sans-serif;
 }
 body {
     background-color: black;
 }
+/* header --------------------------------------------------------- */
 .header {
-    padding-top: 15px;
-    padding-bottom: 15px;
+    /* padding-top: 15px;
+    padding-bottom: 15px; */
+    height: 90px;
     background-color: #484444;
-    color: white;
     font-size: 1em;
     box-shadow: 0px 0px 50px black;
     position: fixed;
@@ -18,21 +20,35 @@ body {
     display: flex;
     justify-content: center;
     z-index: 2147483647;
-    margin: 0 auto;
 }
-
-
 .headtext {
+    width: 110px;
     text-align: center;
-    padding: 0 20px;
     display: inline;
-
 }
+.headimg{
+    height: 60px;
+    width: 60px;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+.header a:hover {
+    color: #fff900;
+}
+.header a:active{
+    color: black;
+}
+/* --------------------------------------------------------------------- */
+/* YOUTUBE ------------------------------------------------------------- */
 .slide1 {
 width: 100%;
-margin-top: -250px;
+height: 100vh;
+object-fit: cover;
+object-position: 0 -300px;
 }
-.ytvid {
+.youtube {
   background-color: black;
 }
 .yttext {
@@ -40,29 +56,17 @@ margin-top: -250px;
     text-decoration: underline;
     color: white;
 }
-.th1 {
-    padding-left: 150px;
-    padding-bottom: 50px;
-}
-.th2 {
-    padding-left: 150px;
-    padding-bottom: 50px;
-}
-.th3 {
-    padding-left: 150px;
-    padding-bottom: 50px;
-}
-.th4 {
-    padding-left: 150px;
-    padding-bottom: 50px;
-}
-
-.presety {
+.ytvideos{
     display: flex;
-    padding: 30px;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    margin: 15px 15px;
+}
+.vd{
+    margin: 2em 3em; 
 }
 .newsletter {
-
     float: left;
     padding-left: 50px;
     text-transform: uppercase;
@@ -79,15 +83,7 @@ margin-top: -250px;
     color: white;
     font-size: 15px;
 }
-a:link {
-    color:white;
-}
-a:hover {
-    color: #fff900;
-}
-a:visited {
-    color: white;
-}
+
 /* sklep ----------------------------------------------------------------*/
 .pic{
     margin-left: 50px;
@@ -97,10 +93,8 @@ a:visited {
     background-color: #484444;
     color: white;
     font-size: 15px;
-    /* box-shadow: 0px 0px 15px black;  */
     justify-content: flex-start;
     display: flex;
-    gap: 400px;
 }
 .shoptext {
     display: flex;
