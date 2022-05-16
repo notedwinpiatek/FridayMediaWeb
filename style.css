@@ -1,142 +1,174 @@
-.header {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #484444;
-    color: white;
-    font-size: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    box-shadow: 0px 0px 50px black;
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
 }
 body {
-    margin: 0px;
     background-color: black;
+    height: 90vh;
+    bottom: 0px;
 }
-.headtext {
-    padding-left: 50px;
-    display: inline;
-    float: left;
-    
-}
-.slide1 {
-width: 100%;
-margin-top: -250px;
-}
-.ytvid {
-  background-color: black;
-}
-.yttext {
-    text-align: center;
-    text-decoration: underline;
-    color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.th1 {
-    padding-left: 150px;
-    padding-bottom: 50px;
-}
-.th2 {
-    padding-left: 150px;
-    padding-bottom: 50px;
-}
-.th3 {
-    padding-left: 150px;
-    padding-bottom: 50px;
-}
-.th4 {
-    padding-left: 150px;
-    padding-bottom: 50px;
-}
-.shop {
-    
+/* header --------------------------------------------------------- */
+.header {
+    height: 10vh;
+    background-color: #484444;
+    font-size: 1em;
+    box-shadow: 0px 0px 50px black;
+    position: fixed;
+    width: 100vw;
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
+    z-index: 2147483647;
+}
+.headtext {
+    width: 110px;
+    text-align: center;
+    display: inline;
+}
+.headimg{
+    height: 60px;
+    width: 60px;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+.header a:hover {
+    color: #fff900;
+}
+.header a:active{
+    color: black;
+}
+/* SLAJD ----------------------------- */
+.slider {
+    background: url(img/slider1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100vh;
+}
+/* YOUTUBE ------------------------------*/
+.videos {
+  background-color: black;
+}
+.vd-heading {
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+.vd-container{
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 422px 422px 422px;
+    grid-template-rows: 263px;
+    grid-auto-rows: 263px;
+    grid-row-gap: 50px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    margin-bottom: 70px;
+}
+.vid-1{
+    background: url(img/th1.jpg);
+    background-size: cover;
+}
+.vid-2{
+    background: url(img/th2.jpg);
+    background-size: cover;
+}
+.vid-3{
+    background: url(img/th3.jpg);
+    background-size: cover;
+}
+.vid-4{
+    background: url(img/th4.jpg);
+    background-size: cover;
+}
+
+/* sklep -----------------------------------*/
+.pic{
+    margin-left: 50px;
+    filter: drop-shadow(10px 10px 10px #000);
+    margin: 10px 20px 40px 50px;
+}
+.pic img{
+    width: 300px;
+    height: auto;
+    margin-right: 15px;
+}
+.shop { 
     background-color: #484444;
     color: white;
     font-size: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    box-shadow: 0px 0px 15px black;
-}
-.presety {
+    justify-content: flex-start;
     display: flex;
-    padding: 30px;
 }
-.sklep {
-    text-align: center;
-    
-    text-decoration: underline;
-}
-.opis {
-    text-align: center;
-    width: 250px;
+.shoptext {
+    display: flex;
     flex-direction: column;
+    margin-top: 38px;  
+    max-width: 450px;  
+}
+.shoptext h2{
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+.opis{
+    margin-bottom: 20px;
+    font-size: 1.25em;
+    max-width: 325px;
+}
+.shoptext a{
+    padding: 12px 20px 12px 20px;
+    background-color: #484444;
+    color: #fff900;
+    border-radius: 20px;
+    border: 3px solid #fff900;
     text-align: center;
-    order: 3, 2, 1;
+    text-decoration: none;
+    font-size: 1.25em;
+    max-width: 150px;
+}
+.shoptext a:hover{
+    background-color: #fff900;
+    border: #fff900 3px solid;
+    color: black;
+}
+.shoptext a:active{
+    border: 3px solid #484444;
+}
+/* -------------------------------------------*/
+.bottom{
+    display: flex;
+    justify-content: flex-start;
 }
 .newsletter {
-
-    float: left;
     padding-left: 50px;
     text-transform: uppercase;
     color: white;
-    font-size: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.newsletter h3{
+    font-size: 1.5em;
 }
 .input {
     padding: 2px;
 }
 .nawigacja {
-    float: left;
-    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
     text-transform: uppercase;
     color: white;
     font-size: 15px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
 }
-a:link {
-    color:white;
-}
-a:hover {
-    color: #fff900;
-}
-a:visited {
+.nawigacja a{
     color: white;
+    text-decoration: underline;
 }
-.bottom {
-    display: flex;
-    justify-content: center;
-}
-.zdj {
-
-}
-.textsklep {
-    margin-right: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    
-}
-.linksklep {
-    background-color: #fff900;
-    border-radius: 15px;
-    width: 150px;
-    border: black solid 1px;
-    /*display: inline;*/
-}
-.linksklep > a {
-    text-decoration: none;
-    color: black;
-}
-.linksklep:hover {
-   background-color: black;
-}
-.linksklep > a:hover {
+.nawigacja a:hover {
     color: #fff900;
+}
+.nawigacja a:active{
+    color: black;
 }
