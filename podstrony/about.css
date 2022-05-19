@@ -39,6 +39,8 @@ body {
     text-align: center;
 }
 .about {
+    text-align: center;
+    color: white;
     display: flex;
     justify-content: center;
 }
@@ -61,11 +63,14 @@ body {
     flex-direction: column;
 }
 .aboutservices {
-    
+    text-align: center;
 }
 .podtalk {
     margin-right: 15px;
     width: 50%;
+}
+.buttonservices {
+    
 }
 /*-------footer---------*/
 
