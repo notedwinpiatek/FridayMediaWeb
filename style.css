@@ -151,8 +151,11 @@ body {
 .newsletter h3{
     font-size: 1.5em;
 }
-.input {
-    padding: 2px;
+.newsletter input {
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    outline: 15px white;
 }
 .nawigacja {
     display: flex;
