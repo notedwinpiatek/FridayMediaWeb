@@ -23,3 +23,46 @@
     height: 50px;
     width: 50px;
 }
+/* .header {
+    height: 10vh;
+    background-color: #484444;
+    font-size: 1em;
+    box-shadow: 0px 0px 50px black;
+    position: fixed;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: 2147483647;
+} */
+.headtext {
+    width: 110px;
+    text-align: center;
+    display: inline;
+}
+.headimg{
+    height: 60px;
+    width: 60px;
+}
+/* .header a{
+    color: white;
+    text-decoration: none;
+} */
+.header a:hover {
+    color: #fff900;
+}
+.header a:active{
+    color: black;
+}
+.container {
+    background-color: white;
+}
+.left {
+    display: flex;
+    justify-content: center;
+}
+.right {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
